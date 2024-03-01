@@ -9,3 +9,20 @@ body {
   grid-template-rows: max-content 1fr max-content;
   min-height: 100vh;
 }
+
+header {
+  position: relative;
+  min-height: 400px;
+}
+
+.background {
+  background-color: steelblue;
+  position: absolute;
+}
+
+.slope {
+  width: 150%;
+  height: 100%;
+  transform: rotate(-10deg);
+  transform-origin: bottom left;
+}
