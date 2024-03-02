@@ -2,9 +2,9 @@
   font-family: Helvetica, Arial, sans-serif;
   --steel: steelblue;
   --cream: #f9f8eb;
-  --steel-shadow: 0px 0px 8px var(--steel);
   --gray: #424242;
-  --gray-shadow: 0px 0px 8px var(--gray);
+  --light-gray: #828282;
+  --gray-shadow: 2px 2px 6px var(--light-gray);
 }
 
 * {
@@ -18,6 +18,16 @@ body {
   grid-template-rows: max-content 1fr max-content;
   min-height: 100vh;
   background-color: var(--cream);
+  gap: 64px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+
+h2 {
+  font-weight: 400;
 }
 
 header {
@@ -77,8 +87,6 @@ header svg {
 .about > h1 {
   grid-area: title;
   align-self: center;
-  font-size: 3rem;
-  font-weight: 300;
 }
 
 .about > p {
@@ -104,7 +112,58 @@ nav a {
   cursor: pointer;
 }
 
-nav img {
+.about nav img {
   height: 32px;
   width: 32px;
+}
+
+main {
+  justify-self: center;
+  display: flex;
+  flex-direction: column;
+  min-width: 85vw;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(250px, 1fr));
+  margin-top: 16px;
+  gap: 32px;
+}
+
+.project {
+  display: grid;
+  grid-template:
+    'preview preview' 12rem
+    'title nav' 2rem
+    'desc desc' 1fr / max-content 1fr;
+  box-shadow: var(--gray-shadow);
+  padding: 16px;
+  background-color: var(--cream);
+}
+
+.project > img {
+  grid-area: preview;
+}
+
+.project > h2 {
+  grid-area: title;
+  font-size: 1.2rem;
+}
+
+.project > nav {
+  grid-area: nav;
+  gap: 12px;
+}
+
+.project > nav img {
+  height: 24px;
+  width: 24px;
+}
+
+.project > p {
+  grid-area: desc;
+  margin-bottom: 64px;
+  font-size: 0.9rem;
+  color: var(--gray);
 }
