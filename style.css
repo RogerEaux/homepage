@@ -103,9 +103,8 @@ nav {
   gap: 24px;
 }
 
-nav button {
+nav a {
   cursor: pointer;
-  border: none;
 }
 
 nav img {
