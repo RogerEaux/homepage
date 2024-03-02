@@ -121,7 +121,7 @@ main {
   justify-self: center;
   display: flex;
   flex-direction: column;
-  min-width: 85vw;
+  max-width: 85vw;
 }
 
 .projects {
@@ -137,8 +137,10 @@ main {
     'preview preview' 12rem
     'title nav' 2rem
     'desc desc' 1fr / max-content 1fr;
+  align-items: center;
+  gap: 8px;
   box-shadow: var(--gray-shadow);
-  padding: 16px;
+  padding: 24px 0;
   background-color: var(--cream);
 }
 
@@ -149,11 +151,13 @@ main {
 .project > h2 {
   grid-area: title;
   font-size: 1.2rem;
+  padding-left: 24px;
 }
 
 .project > nav {
   grid-area: nav;
   gap: 12px;
+  padding-right: 24px;
 }
 
 .project > nav img {
@@ -166,4 +170,5 @@ main {
   margin-bottom: 64px;
   font-size: 0.9rem;
   color: var(--gray);
+  padding: 0 24px;
 }
