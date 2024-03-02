@@ -94,6 +94,21 @@ header {
 
 .about > nav {
   grid-area: nav;
+}
+
+nav {
   align-self: center;
   justify-self: end;
+  display: flex;
+  gap: 24px;
+}
+
+nav button {
+  cursor: pointer;
+  border: none;
+}
+
+nav img {
+  height: 32px;
+  width: 32px;
 }
