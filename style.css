@@ -70,11 +70,9 @@ header svg {
   grid-area: profile;
 }
 
-.profile img {
+.profile picture {
   position: absolute;
   align-self: center;
-  height: 500px;
-  width: auto;
 }
 
 .profile p {
@@ -140,12 +138,14 @@ main {
   align-items: center;
   gap: 8px;
   box-shadow: var(--shadow);
-  padding: 24px 0;
   background-color: var(--cream);
 }
 
 .project > img {
   grid-area: preview;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .project > h2 {
