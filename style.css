@@ -235,18 +235,19 @@ footer > picture {
     float: left;
     transform: scale(1.25);
     transform-origin: bottom right;
-    margin-right: 24px;
+    margin-right: 20px;
     margin-bottom: 16px;
     text-wrap: nowrap;
   }
 
   .about picture p {
     font-size: 2.8rem;
-    bottom: 18rem;
+    bottom: 18.2rem;
     left: 13rem;
   }
 
   .about > h1 {
+    text-align: center;
     font-size: 1.8rem;
     margin-bottom: 16px;
   }
