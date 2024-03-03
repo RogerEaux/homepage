@@ -128,7 +128,7 @@ main {
   display: grid;
   grid-template-columns: repeat(3, minmax(250px, 1fr));
   margin-top: 16px;
-  gap: 32px;
+  gap: 48px;
 }
 
 .project {
@@ -171,4 +171,59 @@ main {
   font-size: 0.9rem;
   color: var(--gray);
   padding: 0 24px;
+}
+
+footer {
+  display: flex;
+  background-color: var(--steel);
+  padding: 0 32px;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  padding: 64px;
+  gap: 40px;
+  color: var(--cream);
+}
+
+.contact p {
+  font-size: 1.4rem;
+}
+
+.contact span {
+  display: block;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.detail {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.detail img {
+  height: 32px;
+  width: 32px;
+}
+
+footer nav {
+  align-self: start;
+}
+
+footer nav img {
+  height: 48px;
+  width: 48px;
+}
+
+footer > img {
+  height: 700px;
+  width: auto;
+  padding: 64px;
+  padding-left: 0;
 }
