@@ -222,10 +222,8 @@ footer {
   width: 48px;
 }
 
-footer > img {
+footer > picture {
   align-self: center;
-  height: 440px;
-  width: auto;
   padding: 32px;
   padding-left: 0;
 }
