@@ -30,6 +30,17 @@ h2 {
   font-weight: 400;
 }
 
+nav {
+  align-self: center;
+  justify-self: end;
+  display: flex;
+  gap: 24px;
+}
+
+nav a {
+  cursor: pointer;
+}
+
 header {
   display: flex;
   justify-content: center;
@@ -51,7 +62,7 @@ header svg {
   grid-template:
     'profile title' 4rem
     'profile desc' 1fr
-    'profile nav' 3rem;
+    'profile nav' 3rem / 450px 1fr;
   gap: 24px;
   position: absolute;
   max-width: 1000px;
@@ -62,23 +73,17 @@ header svg {
   box-shadow: var(--shadow);
 }
 
-.profile {
-  min-width: 440px;
-  display: flex;
-  justify-content: center;
-  position: relative;
+.about picture {
   grid-area: profile;
-}
-
-.profile picture {
   position: absolute;
   align-self: center;
 }
 
-.profile p {
+.about p:first-of-type {
   position: absolute;
-  bottom: -4.2rem;
   font-size: 4.2rem;
+  bottom: 0;
+  left: 1rem;
   color: var(--cream);
 }
 
@@ -87,10 +92,10 @@ header svg {
   align-self: center;
 }
 
-.about > p {
+.about p:nth-of-type(2) {
   grid-area: desc;
   align-self: center;
-  line-height: 1.8rem;
+  line-height: 1.7rem;
   font-size: 1.2rem;
   color: var(--gray);
 }
@@ -99,20 +104,9 @@ header svg {
   grid-area: nav;
 }
 
-nav {
-  align-self: center;
-  justify-self: end;
-  display: flex;
-  gap: 24px;
-}
-
-nav a {
-  cursor: pointer;
-}
-
 .about nav img {
-  height: 32px;
-  width: 32px;
+  height: 40px;
+  width: 40px;
 }
 
 main {
@@ -161,8 +155,8 @@ main {
 }
 
 .project > nav img {
-  height: 24px;
-  width: 24px;
+  height: 32px;
+  width: 32px;
 }
 
 .project > p {
@@ -176,6 +170,7 @@ main {
 footer {
   display: flex;
   justify-content: center;
+  align-items: center;
   background-color: var(--steel);
   padding: 0 32px;
 }
