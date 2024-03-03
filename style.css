@@ -4,7 +4,7 @@
   --cream: #f9f8eb;
   --gray: #424242;
   --light-gray: #828282;
-  --gray-shadow: 2px 2px 6px var(--light-gray);
+  --shadow: 2px 2px 6px var(--light-gray);
 }
 
 * {
@@ -59,7 +59,7 @@ header svg {
   margin: 64px;
   padding: 24px;
   padding-left: 0;
-  box-shadow: var(--gray-shadow);
+  box-shadow: var(--shadow);
 }
 
 .profile {
@@ -139,7 +139,7 @@ main {
     'desc desc' 1fr / max-content 1fr;
   align-items: center;
   gap: 8px;
-  box-shadow: var(--gray-shadow);
+  box-shadow: var(--shadow);
   padding: 24px 0;
   background-color: var(--cream);
 }
@@ -175,6 +175,7 @@ main {
 
 footer {
   display: flex;
+  justify-content: center;
   background-color: var(--steel);
   padding: 0 32px;
 }
@@ -182,7 +183,7 @@ footer {
 .contact {
   display: flex;
   flex-direction: column;
-  padding: 64px;
+  padding: 32px;
   gap: 40px;
   color: var(--cream);
 }
@@ -212,18 +213,19 @@ footer {
   width: 32px;
 }
 
-footer nav {
+.contact nav {
   align-self: start;
 }
 
-footer nav img {
+.contact nav img {
   height: 48px;
   width: 48px;
 }
 
 footer > img {
-  height: 700px;
+  align-self: center;
+  height: 440px;
   width: auto;
-  padding: 64px;
+  padding: 32px;
   padding-left: 0;
 }
