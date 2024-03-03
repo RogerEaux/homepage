@@ -45,13 +45,13 @@ header {
   display: flex;
   justify-content: center;
   position: relative;
-  min-height: 90vh;
+  min-height: 80vh;
 }
 
 header svg {
   position: absolute;
   width: 100%;
-  height: 80vh;
+  height: 65vh;
 }
 
 .about {
@@ -216,7 +216,7 @@ footer {
   width: 48px;
 }
 
-footer > picture {
+footer picture {
   padding: 32px;
   padding-left: 0;
 }
@@ -246,7 +246,6 @@ footer > picture {
 
   .about > h1 {
     text-align: center;
-    font-size: 1.8rem;
     margin-bottom: 16px;
   }
 
@@ -274,8 +273,90 @@ footer > picture {
     gap: 12px;
   }
 
-  footer > picture {
+  footer picture {
     padding: 16px;
     padding-left: 0;
+  }
+}
+
+@media (max-width: 639px) {
+  .about {
+    display: flex;
+    flex-direction: column;
+    box-shadow: none;
+    margin: 0;
+    padding: 16px;
+    background-color: transparent;
+  }
+
+  .about picture {
+    transform: scale(1);
+    transform-origin: center;
+    margin: 0;
+    text-wrap: wrap;
+  }
+
+  .about picture img {
+    width: 80vw;
+    height: auto;
+  }
+
+  .about picture p {
+    font-size: 4.2rem;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+  }
+
+  .about h1 {
+    margin: 0;
+    margin-top: 64px;
+  }
+
+  .about > p {
+    padding: 8px;
+  }
+
+  .about > nav {
+    display: flex;
+  }
+
+  main h1 {
+    align-self: center;
+  }
+
+  .projects {
+    grid-template-columns: repeat(1, minmax(250px, 1fr));
+  }
+
+  footer {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .contact h1 {
+    align-self: center;
+  }
+
+  .contact p {
+    font-size: 1.15rem;
+  }
+
+  .contact > p:first-of-type {
+    font-size: 1.25rem;
+  }
+
+  .contact nav {
+    align-self: center;
+  }
+
+  footer picture {
+    padding: 0;
+  }
+
+  footer picture img {
+    display: block;
+    width: 100vw;
+    height: auto;
   }
 }
