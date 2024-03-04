@@ -225,6 +225,8 @@ footer picture {
   .about {
     display: block;
     max-width: 640px;
+    margin-top: 96px;
+    margin-bottom: 0;
     padding: 32px;
     padding-left: 0;
     padding-top: 0;
@@ -261,7 +263,8 @@ footer picture {
   }
 
   .about > nav {
-    display: none;
+    margin: 0 0 0 auto;
+    width: 104px;
   }
 
   .projects {
@@ -334,7 +337,7 @@ footer picture {
   }
 
   .about > nav {
-    display: flex;
+    margin: 0;
   }
 
   main h1 {
