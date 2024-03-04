@@ -1,2 +1,2 @@
 # homepage
-A web page displaying a responsive homepage
+A web page displaying a responsive portfolio homepage
