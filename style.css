@@ -125,7 +125,7 @@ main {
 .project {
   display: grid;
   grid-template:
-    'preview preview' 12rem
+    'preview preview' 250px
     'title nav' 2rem
     'desc desc' 1fr / max-content 1fr;
   align-items: center;
